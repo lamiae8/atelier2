@@ -1,0 +1,49 @@
+.chiffre , .operateur ,#C,#CE,#equal{
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px black;
+  
+}
+
+#resultat{
+    text-align: end;
+    margin-bottom: 10px;
+    width: 440px;
+    border-radius: 6px;
+}
+
+#cadre{
+
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 120px;
+    margin-left: 350px;
+    width: 430px;
+    height: 280px;
+    border: 3px rgb(59, 92, 88) solid;
+    /* background-color: aquamarine; */
+}
+#plus{
+    margin-bottom: -26px;
+   background-color: rgb(205, 222, 252);
+}
+#plus p{
+     margin-top: 17px;
+
+}
+
+#CE{
+    background-color: rgb(148, 159, 242);
+}
+#C{
+    background-color: rgb(245, 168, 162);
+}
+#equal{
+    background-color: rgb(249, 237, 56);
+}

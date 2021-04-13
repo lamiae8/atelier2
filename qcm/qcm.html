@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta href="utf_8" />
+        <title>QCM</title>
+        <link rel="stylesheet" href="qcm.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.6.0.js"></script>
+        
+       <link rel="icon" href="images/icon.jpg" >
+    </head>
+    <body class="container">
+     <h1> QCM en HTML5 & CSS3 </h1>
+     <h3>Testez vos connaissances en HTML5 et CSS3 </h3>
+     <p> Ce QCM est composé de 5 questions ,chaque question a 3 choix possibles ,et accepte une seule réponse </p>
+     <p id="nb"> NB : Ce QCM suit un système canadien, e.i: réponse juste = 1 , réponse fausse = -1 , aucune réponse = 0 </p>
+        <div id="qst">
+                     
+                                 <!-- QUESTION 1 -->
+
+        <h5>Question1: Lequel des attributs est obligatoire dans la balise < img > ?</h5>
+          <div> <button   id="rep11">A </button> src </div> 
+            
+          <div> <button id="rep12"> B</button> href</div>
+            
+         <div>  <button id="rep13">C</button>  id</div>
+
+
+                           <!-- QUESTION 2 -->
+
+
+         <h5>Question2: À quoi sert les formulaires en HTML? </h5>
+         <div> <button  id="rep21">A </button> Pour afficher le contenu d’un email.  </div> 
+           
+         <div> <button id="rep22"> B</button> Pour afficher l’effet d’animation.</div>
+           
+        <div>  <button id="rep23">C</button> Pour recueillir les entrées de l’utilisateur.</div>
+ 
+            
+                           <!-- QUESTION 3 -->
+      
+        <h5>Question 3: Comment écrire un commentaire en CSS?</h5>
+        <div> <button  id="rep31">A </button> /* un commentaire */ </div> 
+          
+        <div> <button id="rep32"> B</button> // un commentaire // </div>
+          
+       <div>  <button id="rep33">C</button> / un commentaire / </div>
+
+                      
+       
+                                <!-- QUESTION 4 -->
+
+        <h5>Question 4:Parmi les balises suivantes, lesquelles sont liées à un tableau en HTML? </h5>
+        <div> <button  id="rep41"> A </button> < table > < row > < column >< /column > </div> 
+        
+        <div> <button id="rep42"> B </button> < table > < tr > < td >< /td > </div>
+        
+        <div>  <button id="rep43"> C </button>  < table > < head > < body >< /body ></div>
+
+
+
+                                 <!-- QUESTION 5 -->
+
+                    
+        <h5>Question 5:  Quelle est la forme complète du HTML?</h5>
+        <div> <button  id="rep51">A </button> Hyper Text Markup Language </div> 
+          
+        <div> <button id="rep52"> B</button> Hyper Teach Markup Language </div>
+          
+       <div>  <button id="rep53">C</button> Hyper Tech Markup Language </div>
+
+       
+                           <!-- button corriger -->
+
+
+         <button id="corriger">corriger</button>
+
+
+                             <!-- affichage de score -->
+
+            <h3 class="msg" > </h3>
+
+
+    </div>
+
+
+
+
+
+         <script>
+             $(function(){
+
+
+                 var resultat=true;
+                 var check1 = 0;
+                 var check2 = 0;
+                 var check3 = 0;
+                 var check4 = 0;
+                 var check5 = 0;
+                 var score=0;
+
+                $("#rep11").click( function(){
+                    $("#rep11").css('border','2px solid goldenrod');
+                    check1 = 1;
+                    return check1;
+                });
+                
+                $("#rep12").click( function(){
+                    $("#rep12").css('border','2px solid goldenrod');
+                    check1 = -1;
+                    return check1;
+                });
+                $("#rep13").click( function(){
+                    $("#rep13").css('border','2px solid goldenrod');
+                    check1 = -1;
+                    return check1;
+                });
+                
+                   
+             $("#corriger").click(function(){
+                if(check1 == 1){
+                    $("#rep11").css('background-color','green'  );
+                    $("#rep12").css('background-color','rgb(213, 209, 209)');
+                    $("#rep13").css('background-color','rgb(213, 209, 209)');
+                    $("#rep11,#rep12,#rep13").attr('disabled',true);
+                }
+                else if(check1 == -1){
+                    $("#rep11").css('background-color','green');
+                    $("#rep12").css('background-color','red');
+                    $("#rep13").css('background-color','red');
+                    $("#rep11,#rep12,#rep13").attr('disabled',true);
+                }
+                else{
+                    $("#rep11").css('background-color','orange');
+                    $("#rep12").css('background-color','orange');
+                    $("#rep13").css('background-color','orange');
+                    $("#rep11,#rep12,#rep13").attr('disabled',true);
+
+                }
+              
+            
+
+                 });
+
+
+
+                //  ********************* QUESTION2***********************************
+                
+                $("#rep23").click( function(){
+                    $("#rep23").css('border','2px solid goldenrod');
+                    check2 = 1
+                    return check2;
+                });
+                $("#rep22").click( function(){
+                    $("#rep22").css('border','2px solid goldenrod');
+                    check2 = -1
+                    return check2;
+                });
+                $("#rep21").click( function(){
+                    $("#rep21").css('border','2px solid goldenrod');
+                    check2 = -1
+                    return check2;
+                });
+                
+                   
+             $("#corriger").click(function(){
+                if(check2 == 1){
+                    $("# rep23").css('background-color','green'  );
+                    $("#rep22").css('background-color','rgb(213, 209, 209)');
+                    $("#rep21").css('background-color','rgb(213, 209, 209)');
+                    $("#rep21,#rep22,#rep23").attr('disabled',true);
+                }
+                else if(check2 == -1){
+                    $("#rep23").css('background-color','green');
+                    $("#rep22").css('background-color','red');
+                    $("#rep21").css('background-color','red');
+                    $("#rep21,#rep22,#rep23").attr('disabled',true);
+                }
+                else{
+                    $("#rep23").css('background-color','orange');
+                    $("#rep22").css('background-color','orange');
+                    $("#rep21").css('background-color','orange');
+                    $("#rep21,#rep22,#rep23").attr('disabled',true);
+
+                }
+           
+              
+                 });
+
+// ********************** QUESTION 3******************************
+                $("#rep31").click( function(){
+                    $("#rep31").css('border','2px solid goldenrod');
+                     check3 = 1
+                    return check3;
+                });
+                $("#rep32").click( function(){
+                    $("#rep32").css('border','2px solid goldenrod');
+                    check3 = -1
+                    return check3;
+                });
+                $("#rep33").click( function(){
+                    $("#rep33").css('border','2px solid goldenrod');
+                    check3= -1
+                    return check3;
+                });
+                
+                   
+             $("#corriger").click(function(){
+                if(check3 == 1){
+                    $("#rep31").css('background-color','green'  );
+                    $("#rep32").css('background-color','rgb(213, 209, 209)');
+                    $("#rep33").css('background-color','rgb(213, 209, 209)');
+                    $("#rep31,#rep32,#rep33").attr('disabled',true);
+                }
+                else if(check3 == -1){
+                    $("#rep31").css('background-color','green');
+                    $("#rep32").css('background-color','red');
+                    $("#rep33").css('background-color','red');
+                    $("#rep31,#rep32,#rep33").attr('disabled',true);
+                }
+                else{
+                    $("#rep31").css('background-color','orange');
+                    $("#rep32").css('background-color','orange');
+                    $("#rep33").css('background-color','orange');
+                    $("#rep31,#rep32,#rep33").attr('disabled',true);
+
+                }
+            
+              
+                 });
+
+
+                //  *************************** QUESTION 4******************************
+
+
+                $("#rep42").click( function(){
+                    $("#rep42").css('border','2px solid goldenrod');
+                    check4 = 1
+                    return check4;
+                });
+                $("#rep41").click( function(){
+                    $("#rep41").css('border','2px solid goldenrod');
+                    check4 = -1
+                    return check4;
+                });
+                $("#rep43").click( function(){
+                    $("#rep43").css('border','2px solid goldenrod');
+                    check4= -1
+                    return check4;
+                });
+                
+                   
+             $("#corriger").click(function(){
+                if(check4 == 1){
+                    $("#rep42").css('background-color','green'  );
+                    $("#rep41").css('background-color','rgb(213, 209, 209)');
+                    $("#rep43").css('background-color','rgb(213, 209, 209)');
+                    $("#rep41,#rep42,#rep43").attr('disabled',true);
+                }
+                else if(check4 == -1){
+                    $("#rep42").css('background-color','green');
+                    $("#rep41").css('background-color','red');
+                    $("#rep43").css('background-color','red');
+                    $("#rep41,#rep42,#rep43").attr('disabled',true);
+                }
+                else{
+                    $("#rep42").css('background-color','orange');
+                    $("#rep41").css('background-color','orange');
+                    $("#rep43").css('background-color','orange');
+                    $("#rep41,#rep42,#rep43").attr('disabled',true);
+
+                }
+              
+              
+                 });
+
+                // ********************** QUESTION 5**********************************
+                  
+                     
+                 $("#rep51").click( function(){
+                    $("#rep51").css('border','2px solid goldenrod');
+                    check5 = 1
+                    return check5;
+                });
+                $("#rep52").click( function(){
+                    $("#rep52").css('border','2px solid goldenrod');
+                    check5 = -1
+                    return check5;
+                });
+                $("#rep53").click( function(){
+                    $("#rep53").css('border','2px solid goldenrod');
+                    check5 = -1
+                    return check5;
+                });
+                
+                   
+             $("#corriger").click(function(){
+                if(check5 == 1){
+                    $("#rep51").css('background-color','green'  );
+                    $("#rep52").css('background-color','rgb(213, 209, 209)');
+                    $("#rep53").css('background-color','rgb(213, 209, 209)');
+                    $("#rep51,#rep52,#rep53").attr('disabled',true);
+                }
+                else if(check5 == -1){
+                    $("#rep51").css('background-color','green');
+                    $("#rep52").css('background-color','red');
+                    $("#rep53").css('background-color','red');
+                    $("#rep51,#rep52,#rep53").attr('disabled',true);
+                }
+                else{
+                    $("#rep51").css('background-color','orange');
+                    $("#rep52").css('background-color','orange');
+                    $("#rep53").css('background-color','orange');
+                    $("#rep51,#rep52,#rep53").attr('disabled',true);
+
+                }
+
+
+
+                
+            
+              
+                 });
+
+                 $("#corriger").click(function(){
+                  
+                      score=check1+check2+check3+check4+check5;
+                    $(".msg").fadeIn().text('votre score est : ' + score).css('color', 'blue');
+                });
+                
+
+            });
+         </script>
+    </body>
+</html>

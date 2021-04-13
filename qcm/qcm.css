@@ -1,0 +1,49 @@
+div{
+    margin: 20px;
+}
+#qst{
+    margin: 40px;
+    border: 1px solid #777;
+    width: 800px;
+    margin-left: 160px;
+    padding-top: 20px;
+    box-shadow: 1px 1px 1px #777;
+
+   
+}
+
+
+#qst div,h5{
+  
+    
+
+    margin-left: 40px;
+}
+button{
+    background-color:rgb(213, 209, 209) ;
+}
+.msg{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(78, 78, 247);
+    margin-left: 260px;
+    margin-top: 10px;
+}
+
+#corriger{
+   margin-left:480px ;
+   background-color: green;
+   border-radius: 3px;
+}
+
+#nb{
+    color: red;
+}
+h1, h3, p{
+    text-align: center;
+}
+h1{
+    color: rgb(2, 2, 61);
+
+    font-family:cursive ;
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta href="utf_8" />
+        <title>formulaire</title>
+        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.6.0.js"></script>
+        
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet"> -->
+<link rel="icon" href="images/icon-removebg-preview.png" >
+    </head>
+ <body class="container-fluid">
+ <header >
+     <div class="row">
+         <div class="col-6">
+
+      <h1 class="titre"> <span id="spe">Speedy</span></h1>
+        
+        <img  id="char" src="images/icon1-removebg-preview.png">
+     
+      
+      
+        <h1 class=" titre"> <span id="shop">shop</span> </h1> 
+      </div>
+    
+        <div class="col-6" >
+    
+            <nav>
+                    <ul>
+                        <li> <a href="#">Accueil</a></li>
+                        <li> <a href="#"> Compte</a></li>
+                        <li> <a href="#"> Categories</a></li>
+                        <li> <a href="#"> Panier</a></li>
+                        <li> <a href="#">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+        
+    </div>
+ </header>
+
+    
+ 
+<h2>Inscrivez-vous </h2>
+
+
+
+<div class="container form">
+   
+        <form>
+           
+                <label for="nom">Nom</label>
+                <input type="text" class="form-control " id="nom" placeholder="Entrer votre Nom">
+                <div class="message"></div>
+
+                <label for="prenom">Prenom</label>
+                <input type="text" class="form-control " id="prenom" placeholder="Entrer votre Prenom">
+                <div class="message"></div>
+                
+                <label for="address">Address</label>
+                <input type="text" class="form-control " id="address" placeholder="Entrer votre address">
+                <div class="message"></div>
+
+                <label for="email">Email</label>
+                <input type="email" class="form-control " id="email" placeholder="Entrer votre Email">
+                <div class="message"></div>
+
+                
+                <label for="Login">Login</label>
+                <input type="text" class="form-control " id="Login" placeholder="Entrer votre Login">
+                <div class="message"></div>
+
+                <label for="password">Mot de passe</label>
+                <input type="password" class="form-control " id="password" placeholder="Entrer votre Mot de passe">
+                <div class="message">de 8 à 15 caractères
+                    - au moins une lettre minuscule
+                    - au moins une lettre majuscule
+                    - au moins un chiffre
+                    - au moins un de ces caractères spéciaux: $ @ % * + - _ !</div>
+            
+                <label for="passconf">Confirmer votre mot de passe</label>
+                <input type="password" class="form-control " id="passconf" placeholder="Confirmer votre Mot de passe">
+                <div class="message"></div>
+             
+                <label for="tél:">Téléphone</label>
+                <input type="Tél" class="form-control" id="tél" placeholder="Tél: +212..." maxlength="10">
+                <div class="message"></div>
+
+            <label for="civilité">civilité</label>
+            <select id="civilité" class="form-control">
+            <option selected>votre civilité...</option>
+
+                 <option>monsieur</option>
+                 <option>madame</option>
+                 <option>Mademoiselle</option>
+                
+
+            </select>
+            <div class="message"></div>
+
+    
+        <label for="pays">pays</label>
+        <select id="pays" class="form-control">
+        <option selected>choisez votre pays...</option>
+
+            <option >Afghanistan </option>
+            <option >Albanie </option>
+            <option >Algerie </option>
+            <option >Allemagne </option>
+            <option >Anguilla </option>
+            <option >Arabie_Saoudite </option>
+            <option >Argentine </option>
+            <option >Australie </option>
+            <option>Azerbaidjan </option>
+            
+            <option >Bahamas </option>
+            <option >Bangladesh </option>
+            <option >Belgique </option>
+            <option >Bresil </option>
+            <option >Bulgarie </option>
+            <option >Burkina_Faso </option>
+          
+            
+          
+            <option >Cameroun </option>
+            <option >Canada </option>
+            <option >Canaries </option>
+            <option >Chili </option>
+            <option >Chine </option>
+            <option >Colombie </option>
+            <option >Congo </option>
+            <option >Coree_du_Nord </option>
+            <option >Coree_du_Sud </option>
+            <option >Costa_Rica </option>
+            <option >Côte_d_Ivoire </option>
+            <option >Croatie </option>
+            <option >Cuba </option>
+            
+            <option >Danemark </option>
+            <option >Djibouti </option>
+            <option >Dominique </option>
+            
+            <option >Egypte </option>
+            <option >Emirats_Arabes_Unis </option>
+            <option >Espagne </option>
+            <option >Estonie </option>
+            <option >Etats_Unis </option>
+            <option >Ethiopie </option>
+            
+            
+            <option >Feroe </option>
+            <option >Finlande </option>
+            <option >France </option>
+            
+            <option >Gabon </option>
+            <option >Gambie </option>
+            <option >Georgie </option>
+            <option >Ghana </option>
+            <option >Grece </option>
+    
+            
+            <option >Haiti </option>
+            <option >Hawaii </option>
+            <option >Honduras </option>
+            <option >Hong_Kong </option>
+            <option >Hongrie </option>
+            
+            <option >Inde </option>
+            <option>Indonesie </option>
+            <option >Iran </option>
+            <option >Irlande </option>
+            <option >Islande </option>
+            <option >italie </option>
+            
+        
+            <option >Japon </option>
+            <option >Jordanie </option>
+            
+            <option >Kazakhstan </option>
+            <option>Kenya </option>
+            <option >Koweit </option>
+            
+            
+            <option>Liban </option>
+            <option>Liberia </option>
+          <option >Luxembourg </option>
+            <option>Lybie </option>
+            
+            <option >Macao </option>
+            <option >Macedoine </option>
+            <option >Madagascar </option>
+            <option >Madère </option>
+            <option >Malaisie </option>
+            <option >Malawi </option>
+            <option >Maldives </option>
+            <option >Mali </option>
+            <option >Malte </option>
+            <option >Maroc </option>
+            <option >Mexique </option>
+            <option >Monaco </option>
+            <option >Mozambique </option>
+            
+          
+            <option>Niger </option>
+            <option >Nigeria </option>
+            <option >Norvege </option>
+         
+            
+            <option >Oman </option>
+            <option >Ouganda </option>
+            <option >Ouzbekistan </option>
+            
+            <option>Pakistan </option>
+            <option >Palau </option>
+            <option >Palestine </option>   
+            <option >Paraguay </option>
+            <option >Pays_Bas </option>
+            <option >Perou </option>
+            <option >Philippines </option>
+            <option >Pologne </option>
+            <option>Porto_Rico </option>
+            <option>Portugal </option>
+            
+            <option>Qatar </option>
+            
+            <option >Republique_Dominicaine </option>
+            <option>Republique_Tcheque </option>
+            <option >Roumanie </option>
+            <option>Royaume_Uni </option>
+            <option >Russie </option>
+            <option >Rwanda </option>
+          
+            <option >Senegal </option>
+            <option >Singapour </option>
+            <option >Slovaquie </option>
+            <option >Somalie </option>
+            <option >Soudan </option>
+            <option >Suisse </option>
+            <option >Swaziland </option>
+            <option">Syrie </option>
+         
+            <option >Tanzanie </option>
+            <option >Tchad </option>
+            <option >Thailande </option>
+            <option >Tunisie </option>
+            <option >Turquie </option>
+            
+            <option >Ukraine </option>
+          
+            <option >Vatican </option>
+            <option >Venezuela </option>
+            <option >Vietnam </option>
+            
+            <option">Yemen </option>
+     
+            
+            <option >Zambie </option>
+            <option >Zimbabwe </option>
+
+           
+        </select>
+        <div class="message"></div>
+           
+    
+  
+   
+    <button class="btn btn-primary btn-block" value="ok"  id="envoyer" >S'inscrire</button>
+    
+
+</form>
+</div>
+
+<script>
+         
+    $(function () {
+
+$("#envoyer").click(function(){
+    var valider = true;
+
+    // *********************************************nom*****************************
+    if ($("#nom").val() == "") {
+    $("#nom").next(".message").fadeIn().text('veuillez entrer votre nom').css("color","red");
+    valider = false;
+    }
+    else if (!$("#nom").val().match(/^[a-zA-Z]+$/u)) {
+    $("#nom").next(".message").fadeIn().text('veuillez entrer un nom convenable').css("color","red");
+    valider = false;
+    }
+    else{
+        $("#nom").next(".message").fadeOut();
+    }
+
+//    *********************************prenom********************
+    if ($("#prenom").val() == "") {
+    $("#prenom").next(".message").fadeIn().text('veuillez entrer votre nom').css("color","red");
+    valider = false;
+    }
+    else if (!$("#prenom").val().match(/^[a-zA-Z]+$/u)) {
+    $("#prenom").next(".message").fadeIn().text('veuillez entrer un prenom convenable').css("color","red");
+    valider = false;
+    }
+    else{
+        $("#prenom").next(".message").fadeOut();
+    }
+
+// *************************address****************************
+
+    if ($("#address").val() == "") {
+    $("#address").next(".message").fadeIn().text('veuillez entrer votre address').css("color","red");
+    valider = false;
+    }
+    else{
+        $("#address").next(".message").fadeOut();
+    }
+// *****************************email**************************
+
+    if ($("#email").val() == "") {
+    $("#email").next(".message").fadeIn().text('veuillez entrer votre email').css("color","red");
+    valider = false;
+    }
+    else if (!$("#email").val().match(/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i)) {
+    $("#email").next(".message").fadeIn().text('veuillez entrer un email convenable').css("color","red");
+    valider = false;
+    }
+    else{
+        $("#email").next(".message").fadeOut();
+    }
+// ****************************login****************************************
+    
+
+    if ($("#Login").val() == "") {
+        $("#Login").next(".message").fadeIn().text('veuillez entrer votre login').css("color","red");
+        valider = false;
+    }
+    else if (!$("#Login").val().match(/^[a-zA-Z]+$/u)) {
+    $("#Login").next(".message").fadeIn().text('veuillez entrer un login convenable').css("color","red");
+    valider = false;
+    }
+    else{
+        $("#Login").next(".message").fadeOut();
+    }
+   
+    // ***********************password***********************************************
+
+    if ($("#password").val() == "") {
+    $("#password").next(".message").fadeIn().text('veuillez entrer votre mot de passe').css("color","red");
+    valider = false;
+    }
+    else if (!$("#password").val().match(/^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&]).*$/i)) {
+    $("#password").next(".message").fadeIn().text('veuillez entrer un mot de passe convenable').css("color","red");
+    valider = false;
+    }
+    else{
+        $("#password").next(".message").fadeOut();
+    }
+
+
+
+
+    // ********************confirmation password***********************************
+    if ($("#passconf").val() == "") {
+    $("#passconf").next(".message").fadeIn().text('veuillez entrer votre mot de passe').css("color","red");
+    valider = false;
+    }
+    else if ($("#passconf").val()!=$("#password").val()) {
+    $("#passconf").next(".message").fadeIn().text('veuillez entrer un mot de passe identique').css("color","red");
+    valider = false;
+    }
+    else{
+        $("#passconf").next(".message").fadeOut();
+    }
+
+           //  ************** TELEPHONE************************************
+   
+
+    if ($("#tél").val() == "") {
+       $("#tél").next(".message").fadeIn().text('veuillez entrer votre Numéro de théléphone').css('color', 'red');
+      valider = false;
+    }
+   else if (!$("#tél").val().match(/^[0-9]+$/u) || $("#tél").val().length<8) {
+       $("#tél").next(".message").fadeIn().text('incorrect').css('color', 'red');
+      valider = false;
+    }
+    else{
+        $("#tél").next(".message").fadeOut();
+    }
+ 
+            // ******************** CIVILITE*****************************
+
+    if ($("#civilité").val() == "votre civilité...") {
+       $("#civilité").next(".message").fadeIn().text('veuillez choisir votre civilité').css('color', 'red');
+      valider = false;
+    }
+    else{
+        $("#civilité").next(".message").fadeOut();
+    }
+
+//   *****************************pays***********************************
+    
+
+    if ($("#pays").val() == "choisez votre pays...") {
+       $("#pays").next(".message").fadeIn().text('veuillez choisir votre pays').css('color', 'red');
+      valider = false;
+    }
+    else{
+        $("#pays").next(".message").fadeOut();
+    }
+
+
+  
+
+
+
+
+
+
+    return valider;
+
+    });
+
+
+
+});
+</script>
+
+
+
+<footer>
+    <div>
+       
+     <h1><strong class="spe">speedy</strong> shop</h1>
+     <h2>copyright © 2021 tous droits réservés</h2>  
+     <a href="https://www.facebook.com/speedyshop8" > <img src="images/fac.ico" alt="facebook" class="reseau"> </a>
+          <a href="https://www.instagram.com/speedyshop8/"> <img src="images/insta.png" alt="instagram" class="reseau">   </a>   
+    </div>
+
+</footer>
+
+
+
+
+
+  <script src="js/bootstrap.min.js"></script>
+        <script src="js/form.js"></script>
+      
+
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta href="utf_8" />
+        <title>calculator</title>
+        <link rel="stylesheet" href="calcul.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        
+<link rel="icon" href="images/icon.jpg" >
+    </head>
+
+<body class="container">
+    <div id="cadre">
+        <h2>calculator</h2>
+      <div class="container">
+        <div class="row"> 
+            <input type="text" id="resultat" placeholder="0" >
+        </div>
+        <div class="row">
+            <div class="col-2 chiffre">7</div>
+            <div class="col-2 chiffre">8</div>
+            <div class="col-2 chiffre">9</div>
+            <div class="col-1"></div>
+            <div class="col-2 " id="CE">CE</div>
+            <div class="col-2 " id="C">C</div>
+        </div>
+        <div class="row">
+            <div class="col-2 chiffre">4</div>
+            <div class="col-2 chiffre">5</div>
+            <div class="col-2 chiffre">6</div>
+            <div class="col-1"></div>
+            <div class="col-2 chiffre ">/</div>
+            <div class="col-2 chiffre">*</div>
+
+        </div>
+  <div class="row">
+        <div class="col-2 chiffre">1</div>
+        <div class="col-2 chiffre">2</div>
+        <div class="col-2 chiffre">3</div>
+        <div class="col-1"></div>
+        <div class="col-2 chiffre">-</div>
+        <div class="col-2 chiffre" id="plus"><p>+</p></div>
+      
+  </div>
+  <div class="row">
+    <div class="col-4 chiffre" >0</div>
+    <div class="col-2 chiffre">.</div>
+    <div class="col-1"></div>
+    <div class="col-2 " id="equal">=</div>
+  
+  
+  </div>
+      </div>
+       
+    </div>
+
+    
+</body>
+
+<script>
+    $(function () {
+        var i = 0;
+    $('.chiffre').click(function () {
+        $('#resultat').val($('#resultat').val() + $(this).text());
+    });
+
+    // $('.operateur').click(function () {
+    //     i=0;
+    //     $('#resultat').val($('#resultat').val() + $(this).text());
+    //     while(!$('#CE').click() ){
+    //         $('.chiffre').click(function (){
+    //             $('#resultat').val($('#resultat').val() + $(this).text());  
+    //             i++;
+    //             return i;
+    //     });
+    // }
+    
+        
+
+    // });
+
+    $('#C').click(function () {
+        $('#resultat').val(' ');
+    });
+
+    $('#equal').click(function () {
+        $('#resultat').val(eval($('#resultat').val()));
+    });
+
+    $('#CE').click(function () {
+            
+            $('#resultat').val($('#resultat').val().slice(0 , -1 ));
+
+      });
+
+});
+</script>
+
+</html>

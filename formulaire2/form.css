@@ -1,0 +1,128 @@
+
+
+body a{
+    text-decoration: none;
+    
+}
+
+
+/* header */
+
+header{
+    background-color: #777;
+}
+
+
+header h1{
+color: white;
+margin-right:-340px ;
+font-weight: bold;
+
+
+}
+
+
+
+#spe{
+    color: rgb(229, 233, 18);
+    margin-left: 50px;
+}
+#char{
+margin-left: 200px;
+width: 140px;
+}
+#shop{
+    margin-left: 350px; 
+   
+
+}
+nav{
+    float: right;
+    margin-right: 40px;
+    margin-top: 150px;
+}
+
+nav ul li{
+list-style: none;
+display: inline-block;
+ padding: 10px;
+}
+
+nav ul li a{
+    color: rgb(193, 196, 13);
+    font-size: 20px;
+   
+    
+}
+#envoyer{
+    margin-top: 20px;
+    
+    margin-bottom: 20px;
+}
+
+nav ul li a:hover{
+    border-bottom:2px solid  #444;
+    color: #444;
+ font-weight: bold;
+   }
+
+h2{
+    text-align: center;
+    color: #444;
+}   
+
+label{
+    font-size: 25px;
+    text-transform: uppercase;
+    color:rgb(151, 153, 9) ;
+}
+input::placeholder{
+    font-size: 20px;
+}
+option {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#civilité{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#pays{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+/* FOOTER */
+footer{
+ 
+    background-color: #444;
+  
+    text-align: center;
+    padding:60px 0 ;
+    margin-bottom: 0;
+
+
+  }
+  footer h1{
+   color: #fff;
+   font-size: 50px;
+   padding-top: 3px;
+   
+   
+  }
+  .spe{
+    font-weight: bold;
+    color: rgb(229, 233, 18); 
+  
+  }
+  .reseau{
+    padding:15px ;
+    width: 50px;
+  }
+  footer h2{
+    /* color: rgb(155, 155, 155); */
+    color: #777;
+     font-size: 9px;
+    font-style: italic;
+  }
